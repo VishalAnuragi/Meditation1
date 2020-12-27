@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/bg_1">
+
+    <ImageButton
+        android:id="@+id/signup_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arrow"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/hii_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_back"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Hii , what do your friends call you ?"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hii_txt"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_frame"
+        android:elevation="20dp">
+
+        <EditText
+            android:id="@+id/ED_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:lines="1"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/username_layout"
+        android:background="@drawable/meditation"/>
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        android:text="Continue"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
